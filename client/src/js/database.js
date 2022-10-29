@@ -12,36 +12,22 @@ const initdb = async () =>
     },
   });
 
-// GET function
-export const getDb = async (value) => {
-  console.log('Getting data from the jateDB');
-  // connect to DB and version we want 
+// Adds logic to a method that accepts  content and adds it to the database
+export const putDb = async (content) => {
+  console.log('Post to the database');
+
   const jateDb = await openDB('jate', 1);
-  // make new transaction
+
   const tx = jateDb.transaction('jate', 'readwrite');
-  // open object store
-  const objStore = tx.objectStore('jate');
-  // grab all the content in the DB
-  const req = objStore.getAll()
-  // confirm the data was fetched/saved
-  const res = await req;
-  console.log('data saved to the jateDB', res);
+
+  const store = tx.objectStore('jate');
+
+  const request = store.put({ id: 1, value: content });
+
+  const result = await request;
+  console.log('🚀 - data saved to the database', result);
 };
 
-// PUT function
-export const putDb = async (id, value) => {
-  console.log('PUT request to update the jateDB');
-  // connect to DB and version we want to use
-  const jateDb = await openDB('jate', 1);
-  // make new transaction
-  const tx = jateDb.transaction('jate', 'readwrite');
-  // open object store
-  const objStore = tx.objectStore('jate');
-  // pass in content
-  const req = objStore.put({ id: id, value: value })
-  // confirm the data was added/saved
-  const res = await req;
-  console.log('data saved to the jateDB', res);
-};
+
 
 initdb();
