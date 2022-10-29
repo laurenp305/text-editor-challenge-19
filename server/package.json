@@ -11,7 +11,7 @@
         "server": "nodemon server.js --ignore client"
     },
     "keywords": [],
-    "author": "",
+    "author": "Lauren Pineiro",
     "license": "ISC",
     "dependencies": {
         "express": "^4.17.1"

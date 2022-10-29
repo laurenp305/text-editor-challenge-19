@@ -20,7 +20,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'JATE'
+        title: 'Just Another Text Editor'
       }),
       // TODO: Add and configure workbox plugins for a service worker and manifest file.
       // service worker
@@ -32,7 +32,7 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'text-editor',
+        name: 'Just Another Text Editor',
         short_name: 'JATE',
         description: 'Just Another Text Editor!',
         background_color: '#225ca3',
