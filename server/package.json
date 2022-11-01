@@ -13,6 +13,8 @@
         "express": "^4.17.1"
     },
     "devDependencies": {
-        "nodemon": "^2.0.4"
+        "nodemon": "^2.0.4",
+        "node": "^16.6.1",
+        "npm": "^7.20.3"
     }
 }

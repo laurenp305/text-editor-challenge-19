@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "node": "^16.6.1",
+    "npm": "^7.20.3"
   }
 }
