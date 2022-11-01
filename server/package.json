@@ -1,3 +1,21 @@
+const WebpackPlugIn = require('html-webpack-plugin');
+const WebpackPwaManifest = require('webpack-paw-manigest');
+const path = require('path');
+const { InjectManifest } = require('workbox-webpack-plugin');
+
+module.exports = () => {
+    return {
+        mode: 'development',
+        entry: {
+            app: './src/index.js',
+            install: './src/install.js'
+        },
+        output: {
+            path: path.resolve(__dirname, 'dist'),
+            filename: '[name].bundle.js'
+        },
+}
+
 {
     "name": "text-editor",
     "version": "1.0.0",
