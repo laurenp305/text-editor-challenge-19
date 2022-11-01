@@ -19,6 +19,7 @@
     "if-env": "^1.0.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.6",
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
   }
