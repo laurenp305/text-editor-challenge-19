@@ -16,12 +16,14 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "use-indexeddb": "^2.0.2"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4",
     "node": "^16.6.1",
-    "npm": "^7.20.3"
+    "nodemon": "^2.0.4",
+    "npm": "^8.19.2",
+    "webpack-cli": "^4.10.0"
   }
 }
