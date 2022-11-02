@@ -15,6 +15,8 @@ You can install this app by following these steps:
 
 ## Screenshots
 
+<img width="1204" alt="image" src="https://user-images.githubusercontent.com/106932259/199366159-f581dd89-8c9c-485a-8013-80f57a7efa8b.png">
+
 ## URL to Deployed Application
 
 https://text-editor-challenge-nineteen.herokuapp.com/
